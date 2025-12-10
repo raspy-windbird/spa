@@ -3,16 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPA</title>
+    <title>Simple SPA</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <a href="/" onclick="route(event)">ホーム</a>
-        <a href="/about" onclick="route(event)">アバウト</a>
-        <a href="/contact" onclick="route(event)">コンタクト</a>
-    </nav>
-    <div id="app"></div>
-    <script src="router.js"></script>
+    <header>
+        <h1>Simple SPA サンプル</h1>
+        <nav>
+            <a href="/" data-link>ホーム</a>
+            <a href="/about" data-link>アバウト</a>
+            <a href="/contact" data-link>コンタクト</a>
+        </nav>
+    </header>
+
+    <main id="app" role="main"></main>
+
+    <footer>
+        <small>例: ベースパスに /spa を使ってホスティングしても動きます。</small>
+    </footer>
+
+    <script src="router.js" defer></script>
 </body>
 </html>
